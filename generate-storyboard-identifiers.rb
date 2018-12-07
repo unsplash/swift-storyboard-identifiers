@@ -27,7 +27,7 @@ def parseStoryboards(path, filename)
 
     viewControllerIdentifiers += findIdentifiers(content, "storyboardIdentifier", 'viewController', 'navigationController', 'tabBarController', 'tableViewController', 'collectionViewController')
     segueIdentifiers += findIdentifiers(content, "identifier", 'segue')
-    cellIdentifiers += findIdentifiers(content, "reuseIdentifier", 'tableViewCell', 'collectionViewCell')
+    cellIdentifiers += findIdentifiers(content, "reuseIdentifier", 'tableViewCell', 'collectionViewCell','collectionReusableView')
   end
 
   fileContent = "import UIKit\n\n"
